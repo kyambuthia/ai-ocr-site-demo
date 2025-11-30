@@ -42,7 +42,7 @@ button:disabled {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the image horizontally */
+  align-items: flex-start; /* Align items to the left */
 }
 
 .preview {
