@@ -12,7 +12,7 @@ This project is an OCR (Optical Character Recognition) demo application built wi
 
 2.  **Environment Variables:**
 
-    Create a `.env` file in the root of the project and add your DeepInfra API key:
+    Create a `.env` file in the root of the project and add your DeepInfra API key or a DEEPINFRA_API_KEY environment variable:
 
     ```
     DEEPINFRA_API_KEY=your_deepinfra_api_key_here
