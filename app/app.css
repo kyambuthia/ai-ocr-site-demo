@@ -1,15 +1,65 @@
-@import "tailwindcss";
-
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-html,
 body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+  font-family: system-ui, sans-serif;
+  background: #f6f6f6;
+  padding: 20px;
+  color: #333;
 }
+
+.page {
+  background: white;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+.preview {
+  margin-top: 20px;
+  max-width: 100%;
+  border: 1px solid #ccc;
+}
+
+.output {
+  margin-top: 20px;
+  white-space: pre-wrap;
+  background: #fafafa;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-family: monospace;
+  word-break: break-all;
+}
+
+.error {
+    color: #d9534f;
+    margin-top: 10px;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    padding: 10px;
+    border-radius: 4px;
+}
+
