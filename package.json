@@ -9,8 +9,10 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
+    "@ai-sdk/deepinfra": "^1.0.29",
     "@react-router/node": "^7.9.2",
     "@react-router/serve": "^7.9.2",
+    "ai": "^5.0.104",
     "isbot": "^5.1.31",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
