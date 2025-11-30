@@ -38,10 +38,43 @@ button:disabled {
     cursor: not-allowed;
 }
 
+.content-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the image horizontally */
+}
+
 .preview {
   margin-top: 20px;
-  max-width: 100%;
+  max-width: 200px;
+  max-height: 200px;
+  width: auto; /* Allow image to scale down */
+  height: auto; /* Allow image to scale down */
+  object-fit: contain;
   border: 1px solid #ccc;
+}
+
+.results-container {
+  margin-top: 20px;
+  width: 100%; /* Ensure results container takes full width */
+}
+
+@media (min-width: 768px) {
+  .content-wrapper {
+    /* No flexbox for columns on desktop, keep stacked */
+    flex-direction: column;
+    align-items: center;
+  }
+  .preview {
+    /* Keep max size for desktop */
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .results-container {
+    flex: none; /* Remove flex property */
+    width: 100%;
+  }
 }
 
 .output {
@@ -52,6 +85,11 @@ button:disabled {
   border: 1px solid #ddd;
   font-family: monospace;
   word-break: break-all;
+}
+
+.output pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .error {
